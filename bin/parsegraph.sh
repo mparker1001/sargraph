@@ -5,7 +5,7 @@ export LC_TIME=en_US.UTF-8
 SARPATH="/var/log/sa"
 
 #Parsed logs directory
-PARSEDPATH="/var/log/sa/parsed"
+PARSEDPATH="/var/lib/sargraph"
 
 #CPU log name
 CPULOGFILE="cpulog"
