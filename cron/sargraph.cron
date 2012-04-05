@@ -1,1 +1,1 @@
-0 1 * * * root /usr/share/sargraph/cron/parsegraph.sh
+0 1 * * * root /usr/local/sbin/parsegraph.sh
