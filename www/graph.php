@@ -2,9 +2,10 @@
 
 ini_set('display_errors', 0);
 
-Require '../phplot/phplot.php';
+#Set path for phplot library
+Require '/usr/share/sargraph/phplot/phplot.php';
 
-$logpath = '/var/log/sa/parsed/';
+$logpath = '/var/cache/sargraph/';
 
 $cores = shell_exec("cat /proc/cpuinfo | grep processor | tail -1 | awk '{print $3}'") + 1;
 
