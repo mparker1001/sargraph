@@ -7,6 +7,8 @@ SARPATH="/var/log/sa"
 #Parsed logs directory
 PARSEDPATH="/var/cache/sargraph"
 
+[ -d ${PARSEDPATH} ] || mkdir -p ${PARSEDPATH}
+
 #CPU log name
 CPULOGFILE="cpulog"
 
