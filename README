@@ -3,13 +3,15 @@ About
 ----
 
 Author: Matt Parker
-Date: 2012/04/05
+Date: 2012/04/06
+
 
 ----
 Desciption
 ----
 
 Sargraph is a utility which displays memory, cpu, and load graphs from sar data. 
+
 
 ----
 Installation
@@ -37,6 +39,18 @@ Files: vendor/phplot/*
 Description: These are the phplot libraries (http://sourceforge.net/projects/phplot) that generate graph images from the parsed data created by parsegraph.sh. 
 Suggested location: /usr/share/sargraph/phplot/
 
+
+----
+Build
+----
+
+Files: rpmbuild/SPECS/*
+Description: Spec files used for creating an RPM package of sargraph
+
+Files: rpmbuild/RPMS/*
+Description: RPM packages for installing sargraph on RedHat based distros
+
+
 ----
 Dependencies
 ----
@@ -46,3 +60,4 @@ Packages not provided, but needed by sargraph:
 - PHP
 - PHP GD Library
 - Sysstat
+
