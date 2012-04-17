@@ -44,7 +44,7 @@ mv vendor/phplot/* $RPM_BUILD_ROOT/usr/share/sargraph/phplot
 %post
 echo " "
 if [ `php -m | grep gd | wc -l` != 1 ]; then echo "PHP GD Library not detected. You must install GD before sargraph will function properly"; echo " "; fi
-echo "Graph data will update nightly at 1 AM server time. Modify /etc/cron.d/sargraph to change this automated update."
+echo "Graph data will update nightly at 1 AM server time. Modify /etc/cron.d/sargraph.cron to change this automated update."
 echo " "
 echo "** You must run /usr/local/sbin/parsegraph.sh and set an allow rule in /etc/httpd/conf.d/sargraph.conf before using sargraph **"
 echo " "
